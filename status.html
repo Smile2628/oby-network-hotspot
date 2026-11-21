@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OBY NETWORK - Status</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;min-height:100vh;display:flex;align-items:center;
+ justify-content:center;padding:20px;font-family:Arial,sans-serif;
+ color:white;background:linear-gradient(135deg,#07152e,#123d78)
+}
+.card{
+ width:100%;max-width:390px;padding:30px 25px;
+ border:1px solid #31527d;border-radius:18px;
+ background:#102747;box-shadow:0 18px 45px #0006
+}
+.logo{
+ width:58px;height:58px;margin:0 auto 15px;
+ display:grid;place-items:center;border-radius:15px;
+ background:#1677e8;font-size:23px;font-weight:bold
+}
+h1{text-align:center;font-size:23px;margin:0}
+.sub{text-align:center;color:#a9bfdc;font-size:12px;margin:8px 0 25px}
+.status{
+ text-align:center;padding:12px;border-radius:9px;
+ background:#123d36;color:#80edbd;font-size:13px;margin-bottom:20px
+}
+.item{
+ padding:13px 0;border-bottom:1px solid #31527d;
+ display:flex;justify-content:space-between;gap:12px;font-size:13px
+}
+.item span:first-child{color:#a9bfdc}
+.item span:last-child{text-align:right;overflow-wrap:anywhere}
+button{
+ width:100%;margin-top:25px;padding:14px;border:0;
+ border-radius:9px;background:#1684f8;color:white;
+ font-size:14px;font-weight:bold;cursor:pointer
+}
+.footer{text-align:center;color:#8fa8c8;font-size:11px;margin-top:22px}
+</style>
+</head>
+<body>
+<div class="card">
+ <div class="logo">ON</div>
+ <h1>OBY NETWORK</h1>
+ <div class="sub">INFORMASI KONEKSI HOTSPOT</div>
+ <div class="status">● Terhubung ke Internet</div>
+
+ <div class="item">
+  <span>Username</span>
+  <span>$(username)</span>
+ </div>
+ <div class="item">
+  <span>Alamat IP</span>
+  <span>$(ip)</span>
+ </div>
+ <div class="item">
+  <span>MAC Address</span>
+  <span>$(mac)</span>
+ </div>
+ <div class="item">
+  <span>Durasi Koneksi</span>
+  <span>$(uptime)</span>
+ </div>
+ <div class="item">
+  <span>Download</span>
+  <span>$(bytes-in-nice)</span>
+ </div>
+ <div class="item">
+  <span>Upload</span>
+  <span>$(bytes-out-nice)</span>
+ </div>
+
+ <form action="$(link-logout)" method="post">
+  <button type="submit">LOGOUT</button>
+ </form>
+
+ <div class="footer">OBY NETWORK © 2026</div>
+</div>
+</body>
+</html>
