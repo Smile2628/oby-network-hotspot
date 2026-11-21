@@ -4,13 +4,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
 <title>OBY NETWORK - Status</title>
 <style>
 *{box-sizing:border-box}
 body{
  margin:0;min-height:100vh;display:flex;align-items:center;
  justify-content:center;padding:20px;font-family:Arial,sans-serif;
- color:white;background:linear-gradient(135deg,#07152e,#123d78)
+ color:#fff;background:linear-gradient(135deg,#07152e,#123d78)
 }
 .card{
  width:100%;max-width:390px;padding:30px 25px;
@@ -47,37 +49,18 @@ button{
  <div class="logo">ON</div>
  <h1>OBY NETWORK</h1>
  <div class="sub">INFORMASI KONEKSI HOTSPOT</div>
- <div class="status">● Terhubung ke Internet</div>
+ <div class="status">● TERHUBUNG KE INTERNET</div>
 
- <div class="item">
-  <span>Username</span>
-  <span>$(username)</span>
- </div>
- <div class="item">
-  <span>Alamat IP</span>
-  <span>$(ip)</span>
- </div>
- <div class="item">
-  <span>MAC Address</span>
-  <span>$(mac)</span>
- </div>
- <div class="item">
-  <span>Durasi Koneksi</span>
-  <span>$(uptime)</span>
- </div>
- <div class="item">
-  <span>Download</span>
-  <span>$(bytes-in-nice)</span>
- </div>
- <div class="item">
-  <span>Upload</span>
-  <span>$(bytes-out-nice)</span>
- </div>
+ <div class="item"><span>Username</span><span>$(username)</span></div>
+ <div class="item"><span>Alamat IP</span><span>$(ip)</span></div>
+ <div class="item"><span>MAC Address</span><span>$(mac)</span></div>
+ <div class="item"><span>Durasi Koneksi</span><span>$(uptime)</span></div>
+ <div class="item"><span>Download</span><span>$(bytes-in-nice)</span></div>
+ <div class="item"><span>Upload</span><span>$(bytes-out-nice)</span></div>
 
  <form action="$(link-logout)" method="post">
   <button type="submit">LOGOUT</button>
  </form>
-
  <div class="footer">OBY NETWORK © 2026</div>
 </div>
 </body>
